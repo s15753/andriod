@@ -3,6 +3,7 @@
     <string name="bmi_group">BMI Group</string>
     <string name="slash">/</string>
     <string name="height_text">height (cm)</string>
+    <string name="weight_text">weight (kg)</string>
     <string name="bmi_count_text">BMI Count</string>
     <string name="button_calculate">CALCULATE</string>
     <string name="button_exit">EXIT</string>
