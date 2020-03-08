@@ -38,9 +38,4 @@ public class ExampleInstrumentedTest {
 
         assertEquals("com.example.bmi_calc", appContext.getPackageName());
     }
-
-    @Test
-    public void mainActivityNotNull() {
-        assertNotNull(bmi_calc);
-    }
 }
