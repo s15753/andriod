@@ -5,8 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
@@ -24,7 +24,7 @@ public class ShowCaloriesActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_show_calories);
 
-        Button buttonCalculate = (Button) findViewById(R.id.buttonCalculateKcal);
+        ImageView buttonCalculate = (ImageView) findViewById(R.id.buttonCalculateKcal);
 
         getAge = (EditText) findViewById(R.id.editTextAge);
         kcalResult = (TextView) findViewById(R.id.kcalResult);

@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorBackground"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".CalculatorActivity">
@@ -69,59 +70,49 @@
         app:layout_constraintEnd_toStartOf="@+id/textViewSlash"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/buttonCalculate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        android:background="#0B4D7C"
-        android:text="@string/button_calculate"
-        android:textColor="#EEF3F3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewSlash" />
-
-    <Button
-        android:id="@+id/buttonExit"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="40dp"
-        android:text="@string/button_exit"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/buttonKcal" />
-
-    <Button
-        android:id="@+id/buttonDish"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginBottom="40dp"
-        android:text="@string/button_food"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/buttonKcal"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/buttonKcal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="40dp"
-        android:text="@string/button_calories"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/buttonCalculate"
-        app:layout_constraintStart_toStartOf="@+id/buttonCalculate" />
-
     <TextView
         android:id="@+id/textError"
         android:layout_width="275dp"
         android:layout_height="30dp"
-        android:textColor="#ff0000"
         android:gravity="center_vertical|center_horizontal"
-        app:layout_constraintBottom_toTopOf="@+id/buttonCalculate"
+        android:textColor="#ff0000"
         app:layout_constraintEnd_toEndOf="@+id/textViewBmiGroup"
         app:layout_constraintStart_toStartOf="@+id/textViewBmiCount"
         app:layout_constraintTop_toBottomOf="@+id/textViewSlash" />
+
+    <ImageButton
+        android:id="@+id/buttonKcal"
+        android:layout_width="63dp"
+        android:layout_height="62dp"
+        android:layout_marginBottom="64dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonCalculate"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCalculate"
+        app:srcCompat="@mipmap/kcal_foreground" />
+
+    <ImageButton
+        android:id="@+id/buttonDish"
+        android:layout_width="69dp"
+        android:layout_height="63dp"
+        android:layout_marginBottom="64dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonCalculate"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCalculate"
+        app:srcCompat="@mipmap/dish_foreground" />
+
+    <ImageButton
+        android:id="@+id/buttonCalculate"
+        android:layout_width="85dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="211dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textError"
+        app:layout_constraintStart_toStartOf="@+id/textError"
+        app:layout_constraintTop_toBottomOf="@+id/textError"
+        app:srcCompat="@mipmap/calculate_foreground" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

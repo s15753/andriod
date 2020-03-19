@@ -2,12 +2,11 @@ package com.example.bmi;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class CalculatorActivity extends AppCompatActivity {
@@ -30,10 +29,9 @@ public class CalculatorActivity extends AppCompatActivity {
         bmiGroup = (TextView) findViewById(R.id.textViewBmiGroup);
         bmiError = (TextView) findViewById(R.id.textError);
 
-        Button buttonCalculate = (Button) findViewById(R.id.buttonCalculate);
-        Button buttonExit = (Button) findViewById(R.id.buttonExit);
-        Button buttonKcal = (Button) findViewById(R.id.buttonKcal);
-        Button buttonDish = (Button) findViewById(R.id.buttonDish);
+        ImageView buttonCalculate = (ImageView) findViewById(R.id.buttonCalculate);
+        ImageView buttonKcal = (ImageView ) findViewById(R.id.buttonKcal);
+        ImageView buttonDish = (ImageView ) findViewById(R.id.buttonDish);
 
         buttonCalculate.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -78,13 +76,6 @@ public class CalculatorActivity extends AppCompatActivity {
                 }catch (NullPointerException err){
                     bmiError.setText(getString(R.string.text_error));
                 }
-            }
-        });
-
-        buttonExit.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                finish();
             }
         });
     }
