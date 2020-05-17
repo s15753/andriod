@@ -19,6 +19,7 @@
     <string name="kcal_result">Your daily calories are: </string>
     <string name="kcal_age">age</string>
     <string name="text_error">Provide all parameters</string>
+    <string name="chart_button">Wykres zachorowań</string>
     <string name="underweight_text">
         Breakfast: \n
         Granola 75g \n
@@ -101,4 +102,15 @@
         1/2 cup diced cantaloupe topped with 1/2 cup all-fruit raspberry sorbet and 1 teaspoon chopped walnuts
     </string>
     <string name="default_text">Calculate your BMI first</string>
+
+    <string-array name="chart_names">
+        <item>Zachorowania</item>
+        <item>Ozdrowienia</item>
+        <item>Zgony</item>
+    </string-array>
+    <string-array name="chart_values">
+        <item>18257</item>
+        <item>7175</item>
+        <item>815</item>
+    </string-array>
 </resources>
