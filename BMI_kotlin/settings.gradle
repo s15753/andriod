@@ -1,0 +1,2 @@
+rootProject.name='BMI_kotlin'
+include ':app'

@@ -1,0 +1,104 @@
+<resources>
+    <string name="app_name">BMI</string>
+    <string name="welcome_text">Welcome to BMI calculator</string>
+    <string name="button_welcome">START</string>
+    <string name="slash_text">/</string>
+    <string name="bmi_group_text">BMI Group</string>
+    <string name="height_text">height (cm)</string>
+    <string name="weight_text">weight (kg)</string>
+    <string name="bmi_count_text">BMI Count</string>
+    <string name="dish_text">Today\'s dish</string>
+    <string name="button_calculate">CALCULATE</string>
+    <string name="button_exit">BACK</string>
+    <string name="button_calories">KCAL</string>
+    <string name="button_food">DISH</string>
+    <string name="kcal_text">Daily calories</string>
+    <string name="kcal_sex_text">Choose sex</string>
+    <string name="kcal_sex_male">Male</string>
+    <string name="kcal_sex_female">Female</string>
+    <string name="kcal_result">Your daily calories are: </string>
+    <string name="kcal_age">age</string>
+    <string name="text_error">Provide all or not 0 values</string>
+    <string name="underweight_text">
+        Breakfast: \n
+        Granola 75g \n
+        Greek Yogurt 100g \n
+        chopped Brazil Nuts \n
+        + 1 handful each of Blueberries and Raspberries 28g \n
+        \n
+        Morning Snack: \n
+        2 Oatcakes \n
+        1 tablespoon Peanut Butter \n
+        1 Nectarine \n
+        \n
+        Lunch: \n
+        2 Whole Wheat Pita Breads \n
+        Roast Chicken 100g \n
+        1 medium Avocado \n
+        Large handful of Spinach, Watercress and Rocket \n
+        \n
+        Afternoon Snack: \n
+        Trail Mix 50g \n
+        \n
+        Dinner: \n
+        Salmon Fillet 140g \n
+        Brown Basmati Rice 100g \n
+        Tahini Broccoli 85g \n
+        Green Peas 80g \n
+        \n
+        Evening Snack: \n
+        Medium Banana
+    </string>
+    <string name="optimum_text">
+        Breakfast: \n
+        1 grapefruit \n
+        2 poached eggs \n
+        2 slices whole-grain toast \n
+        cup low-fat milk \n
+        cup of black coffee
+        \n
+        Snack: \n
+        1 banana \n
+        1 cup plain yogurt \n
+        glass of water
+        \n
+        Lunch: \n
+        chicken breast \n
+        large garden salad with tomato and onion with one cup croutons, topped with one tablespoon oil and vinegar \n
+        glass of water \n
+        \n
+        Dinner: \n
+        1 cup steamed broccoli \n
+        1 cup of brown rice \n
+        halibut \n
+        small garden salad with one cup spinach leaves, tomato, and onion topped with two tablespoons oil and vinegar or salad dressing
+        1 glass white wine
+        sparkling water with lemon or lime slice \n
+        \n
+        Snack: \n
+        1 cup blueberries
+        2 tablespoons whipped cream
+        glass of water
+    </string>
+    <string name="overweight_text">
+        Breakfast: \n
+        1/2 cup egg whites scrambled with 1 teaspoon olive oil, 1 teaspoon chopped basil, 1 teaspoon grated Parmesan, and 1/2 cup cherry tomatoes \n
+        1 slice whole-grain toast \n
+        1/2 cup blueberries \n
+        1 cup skim milk \n
+        \n
+        Snack: \n
+        1/2 cup fat-free Greek yogurt topped with 1/4 cup sliced strawberries \n
+        \n
+        Lunch: \n
+        Salad made with: 3/4 cup cooked bulgur, 4 ounces chopped grilled chicken breast, 1 tablespoon shredded low-fat cheddar, diced grilled veggies \n
+        2 tablespoons hummus and 6 baby carrots \n
+        \n
+        Dinner: \n
+        4 ounces grilled salmon \n
+        1 cup wild rice with 1 tablespoon slivered toasted almonds \n
+        1 cup wilted baby spinach with 1 teaspoon each olive oil, balsamic vinegar, and grated Parmesan \n
+        1/2 cup diced cantaloupe topped with 1/2 cup all-fruit raspberry sorbet and 1 teaspoon chopped walnuts
+    </string>
+    <string name="default_text">Calculate your BMI first</string>
+</resources>

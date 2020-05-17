@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShowCaloriesActivity">
+
+    <TextView
+        android:id="@+id/textKcal"
+        android:layout_width="234dp"
+        android:layout_height="111dp"
+        android:layout_marginTop="80dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/kcal_text"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/kcalRadioGroup"
+        android:layout_width="150dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center_vertical|center_horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/editTextAge"
+        app:layout_constraintStart_toStartOf="@+id/editTextAge"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAge">
+
+        <TextView
+            android:id="@+id/radioSexText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/kcal_sex_text"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonFemale"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="@string/kcal_sex_female"
+            tools:layout_editor_absoluteX="243dp"
+            tools:layout_editor_absoluteY="256dp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonMale"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="@string/kcal_sex_male"
+            tools:layout_editor_absoluteX="79dp"
+            tools:layout_editor_absoluteY="256dp" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/kcalResult"
+        android:layout_width="327dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="center_vertical|center_horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCalculateKcal" />
+
+    <EditText
+        android:id="@+id/editTextAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:gravity="center_vertical|center_horizontal"
+        android:hint="@string/kcal_age"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/textKcal"
+        app:layout_constraintStart_toStartOf="@+id/textKcal"
+        app:layout_constraintTop_toBottomOf="@+id/textKcal" />
+
+    <TextView
+        android:id="@+id/kcalError"
+        android:layout_width="278dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="40dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:textColor="#ff0000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCalculateKcal" />
+
+    <ImageButton
+        android:id="@+id/buttonCalculateKcal"
+        android:layout_width="89dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="40dp"
+        android:background="#f0ffff"
+        app:layout_constraintEnd_toEndOf="@+id/kcalRadioGroup"
+        app:layout_constraintStart_toStartOf="@+id/kcalRadioGroup"
+        app:layout_constraintTop_toBottomOf="@+id/kcalRadioGroup"
+        app:srcCompat="@mipmap/calculate_foreground" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

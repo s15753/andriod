@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CalculatorActivity">
+
+    <TextView
+        android:id="@+id/textViewBmiGroup"
+        android:layout_width="120dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:hint="@string/bmi_group_text"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/textViewSlash"
+        app:layout_constraintTop_toBottomOf="@+id/editTextHeight" />
+
+    <TextView
+        android:id="@+id/textViewSlash"
+        android:layout_width="20dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/slash_text"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextHeight" />
+
+    <EditText
+        android:id="@+id/editTextWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:ems="10"
+        android:gravity="center_vertical|center_horizontal"
+        android:hint="@string/weight_text"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextHeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:gravity="center_vertical|center_horizontal"
+        android:hint="@string/height_text"
+        android:inputType="number"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextWeight" />
+
+    <TextView
+        android:id="@+id/textViewBmiCount"
+        android:layout_width="120dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:hint="@string/bmi_count_text"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/textViewSlash"
+        app:layout_constraintTop_toBottomOf="@+id/editTextHeight" />
+
+    <TextView
+        android:id="@+id/textError"
+        android:layout_width="275dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:textColor="#ff0000"
+        app:layout_constraintEnd_toEndOf="@+id/textViewBmiGroup"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textViewBmiCount"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSlash" />
+
+    <ImageButton
+        android:id="@+id/buttonKcal"
+        android:layout_width="63dp"
+        android:layout_height="62dp"
+        android:layout_marginBottom="64dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonCalculate"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCalculate"
+        app:srcCompat="@mipmap/kcal_foreground" />
+
+    <ImageButton
+        android:id="@+id/buttonDish"
+        android:layout_width="69dp"
+        android:layout_height="63dp"
+        android:layout_marginBottom="64dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonCalculate"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCalculate"
+        app:srcCompat="@mipmap/dish_foreground" />
+
+    <ImageButton
+        android:id="@+id/buttonCalculate"
+        android:layout_width="85dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="211dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textError"
+        app:layout_constraintStart_toStartOf="@+id/textError"
+        app:layout_constraintTop_toBottomOf="@+id/textError"
+        app:layout_constraintVertical_bias="0.476"
+        app:srcCompat="@mipmap/calculate_foreground" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
